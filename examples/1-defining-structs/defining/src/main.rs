@@ -6,15 +6,15 @@ struct Person {
     email: String,
     phone_number: String,
 }
-
+/*
 impl Person {
     fn full_name(&self) -> String {
         format!("{} {}", self.first_name, self.last_name)
     }
 }
-
+*/
 fn main() {
-    let person = Person {
+    let alfredo = Person {
         first_name: "John".to_string(),
         last_name: "Doe".to_string(),
         age: 25,
@@ -22,6 +22,6 @@ fn main() {
         phone_number: "+1-123455-66-77".to_string(),
     };
 
-    println!("{:?}", person);
-    println!("Full Name: {}", person.full_name());
+    println!("{:?}", alfredo);
+    // println!("Full Name: {}", person.full_name());
 }
